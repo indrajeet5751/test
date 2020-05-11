@@ -1,0 +1,35 @@
+<html>
+	<head>
+        <title>DAY 1</title>
+		<script>
+			function high()
+			{
+				var num1, num2, num3;
+				num1 = Number(document.getElementById("n1").value);
+				num2 = Number(document.getElementById("n2").value);
+				num3 = Number(document.getElementById("n3").value);
+
+				if(num1>num2 && num1>num3)
+				{
+					window.alert("highest"+num1);
+				}
+				else if(num2>num1 && num2>num3)
+				{
+					window.alert("highest"+num2);
+				}
+				else if(num3>num1 && num3>num1)
+				{
+					window.alert("highest"+num3);
+				}
+			}
+		</script>
+	</head>
+	<body>
+        <h1>TASK 1</h1>
+        <hr>
+		Enter number 1: <input type="text" id="n1"></input><br>
+		Enter number 2: <input type="text" id="n2"></input><br>
+		Enter number 3: <input type="text" id="n3"></input><br>
+		<button onclick="high()">OK</button>
+	</body>
+</html>
